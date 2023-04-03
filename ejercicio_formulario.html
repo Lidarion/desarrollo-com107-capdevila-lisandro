@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio_formulario_LisandroCapdevila</title>
+</head>
+<body>
+    <form>
+        <label>Apellido:</label>
+        <input type="text" name="apellido"><br>
+      
+        <label>Nombres:</label>
+        <input type="text" name="nombres"><br>
+      
+        <label>Edad:</label>
+        <input type="text" name="edad"><br>
+      
+        <label>Sexo:</label>
+        <select name="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select><br>
+      
+        <label>Edad:</label>
+        <input type="radio" name="edad" value="menor"> Menor 18 años
+        <input type="radio" name="edad" value="mayor"> Mayor 18 años<br>
+      
+        <label>Idiomas:</label>
+        <select name="idiomas[]" multiple>
+          <option value="ingles">Inglés</option>
+          <option value="frances">Francés</option>
+          <option value="aleman">Alemán</option>
+          <option value="holandes">Holandés</option>
+        </select><br>
+      
+        <label>Extras:</label>
+        <input type="checkbox" name="extras[]" value="auto"> Auto
+        <input type="checkbox" name="extras[]" value="camioneta"> Camioneta
+        <input type="checkbox" name="extras[]" value="camion"> Camión<br>
+      
+        <label>Comentario:</label>
+        <textarea name="comentario"></textarea><br>
+      
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
+      </form>
+</body>
+</html>
